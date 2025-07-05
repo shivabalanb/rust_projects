@@ -18,10 +18,15 @@ enum Coin {
 }
 
 fn main() {
-    let rect1 = Rectangle{width: 30, height:50};
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
 
-    println!("The are of the rectangle is {} square pixels.", rect1.area());
-
+    println!(
+        "The are of the rectangle is {} square pixels.",
+        rect1.area()
+    );
 }
 
 fn value_in_cents(coin: Coin) -> u8 {
