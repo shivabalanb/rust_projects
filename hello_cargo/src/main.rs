@@ -32,6 +32,20 @@ fn main() {
     // another_function(5);
 }
 
+fn add_big_strings_simplified(dst: &mut Vec<String>, src: &[String]) {
+    // Line A: Immutable borrow of `dst` occurs here, via `largest`.
+    let largest: &String = dst.iter().max_by_key(|s| s.len()).unwrap();
+
+    // Imagine 's.clone()' was replaced by 'String::from("example")'
+    // Line B: Attempt to acquire a *mutable borrow* of `dst` for `push`.
+    dst.push(String::from("example")); // This line would still error
+
+    // Even here, after the push, largest might still be considered active by the borrow checker
+    // if its lifetime extends to the end of the function and there were no more uses.
+    // However, the error occurs precisely at the `dst.push` line.
+    // println!("{}",largest);
+}
+
 fn greet(g1: String, g2: String) -> (String, String) {
     println!("{} {}!", g1, g2);
     (g1, g2)
