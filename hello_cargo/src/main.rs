@@ -1,11 +1,16 @@
 use std::vec;
 
 fn main() {
+    let mut v: Vec<String> = vec![String::from("Hello world")];
+    let mut s: String = v.remove(0);
+    s.push('!');
+    println!("{s}");
+    assert!(v.len() == 0);
 
-    let mut v = vec![1,2,3];
-    let num = v[2];
-    v.push(2);
-    println!("{}",num);
+    // let mut v = vec![1,2,3];
+    // let num = v[2];
+    // v.push(2);
+    // println!("{}",num);
 
     // let m1 = String::from("Hello");
     // let m2 = String::from("world");
