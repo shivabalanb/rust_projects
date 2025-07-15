@@ -5,6 +5,11 @@ struct Rectangle {
 }
 
 impl Rectangle {
+
+    fn set_width(&mut self, width: u32) {
+        self.width = width;
+    }
+
     fn area(&self) -> u32 {
         self.width * self.height
     }
@@ -16,6 +21,13 @@ impl Rectangle {
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
     }
+
+    fn max(&self, other: Rectangle)->Rectangle{
+        Rectangle{
+            width:self.width.max(other.width),
+            height: self.height.max(other.height)
+        }
+    }
 }
 
 enum Coin {
@@ -26,22 +38,15 @@ enum Coin {
 }
 
 fn main() {
-    let rect1 = Rectangle {
+    let mut rect1 = &Box::new(Rectangle {
         width: 30,
         height: 50,
-    };
-    let rect2 = Rectangle {
-        width: 10,
-        height: 20,
-    };
-    let rect3 = Rectangle {
-        width: 20,
-        height: 60,
-    };
-    let rect4 = Rectangle::square(5);
+    });
+    
+    let area = Rectangle::area(&&&&&&rect1);
 
     println!(
-        "{}",rect4.area()
+        "{}",area
     );
 }
 

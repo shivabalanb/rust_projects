@@ -1,5 +1,7 @@
-https://rust-book.cs.brown.edu/ch05-01-defining-structs.html
+https://rust-book.cs.brown.edu/ch05-03-method-syntax.html
 
+https://rust-book.cs.brown.edu/ch05-03-method-syntax.html
+https://rust-book.cs.brown.edu/ch05-01-defining-structs.html
 https://rust-book.cs.brown.edu/ch04-03-fixing-ownership-errors.html
 https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html
 https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html

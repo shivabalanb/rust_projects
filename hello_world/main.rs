@@ -5,7 +5,7 @@ struct User {
 
 fn main() {
     let u1 = User{
-        
+        name
     }
     println!("Hello world!");
 }
