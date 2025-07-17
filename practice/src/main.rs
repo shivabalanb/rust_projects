@@ -29,7 +29,6 @@ impl Rectangle {
         }
     }
 }
-
 enum Coin {
     Penny,
     Nickel,
@@ -38,19 +37,10 @@ enum Coin {
 }
 
 fn main() {
-    let mut rect1 = &Box::new(Rectangle {
-        width: 30,
-        height: 50,
-    });
-    
-    let area = Rectangle::area(&&&&&&rect1);
-
-    println!(
-        "{}",area
-    );
+    let num = 9;
 }
 
-fn value_in_cents(coin: Coin) -> u8 {
+fn value_in_cents(coin: &Coin) -> u8 {
     match coin {
         Coin::Penny => 1,
         Coin::Nickel => 5,

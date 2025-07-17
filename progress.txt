@@ -1,5 +1,7 @@
-https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html
+https://rust-book.cs.brown.edu/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html
 
+https://rust-book.cs.brown.edu/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html
+https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html
 https://rust-book.cs.brown.edu/ch05-03-method-syntax.html
 https://rust-book.cs.brown.edu/ch05-03-method-syntax.html
 https://rust-book.cs.brown.edu/ch05-01-defining-structs.html
