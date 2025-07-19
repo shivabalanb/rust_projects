@@ -1,5 +1,6 @@
-https://rust-book.cs.brown.edu/ch08-02-strings.html
+https://rust-book.cs.brown.edu/ch08-03-hash-maps.html
 
+https://rust-book.cs.brown.edu/ch08-02-strings.html
 https://rust-book.cs.brown.edu/ch08-01-vectors.html
 https://rust-book.cs.brown.edu/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html
 https://rust-book.cs.brown.edu/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html
