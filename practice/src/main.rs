@@ -1,3 +1,11 @@
+
+fn main() {
+    let mut v= Vec::new();
+    let v1 = vec![1,2,3];
+
+    v.push(1);
+}
+
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -36,9 +44,6 @@ enum Coin {
     Quarter,
 }
 
-fn main() {
-    let num = 9;
-}
 
 fn value_in_cents(coin: &Coin) -> u8 {
     match coin {
