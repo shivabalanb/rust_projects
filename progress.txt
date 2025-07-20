@@ -1,5 +1,7 @@
-https://rust-book.cs.brown.edu/ch08-03-hash-maps.html
+https://rust-book.cs.brown.edu/ch09-02-recoverable-errors-with-result.html
 
+https://rust-book.cs.brown.edu/ch09-01-unrecoverable-errors-with-panic.html
+https://rust-book.cs.brown.edu/ch08-03-hash-maps.html
 https://rust-book.cs.brown.edu/ch08-02-strings.html
 https://rust-book.cs.brown.edu/ch08-01-vectors.html
 https://rust-book.cs.brown.edu/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html
