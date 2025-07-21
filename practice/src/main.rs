@@ -1,4 +1,4 @@
-
+use crate::test::Rectangle;
 fn main() {
     let a = Box::new(String::from("hello"));
     let b = String::from("hello");
@@ -11,40 +11,50 @@ fn main() {
 
     println!("{d}");
 
-    let mut v= Vec::new();
-    let v1 = vec![1,2,3];
+    let mut v = Vec::new();
+    let v1 = vec![1, 2, 3];
 
     v.push(1);
+
+    // let mut a = Rectangle::new{
+    //     2,2
+    // };
+    // a.height = 5;
 }
 
-#[derive(Debug)]
-struct Rectangle {
-    width: u32,
-    height: u32,
-}
+mod test {
 
-impl Rectangle {
-
-    fn set_width(&mut self, width: u32) {
-        self.width = width;
+    #[derive(Debug)]
+    pub struct Rectangle {
+        width: u32,
+        height: u32,
     }
 
-    fn area(&self) -> u32 {
-        self.width * self.height
-    }
+    impl Rectangle {
+        fn set_width(&mut self, width: u32) {
+            self.width = width;
+        }
 
-    fn square(size: u32) -> Self {
-        Self {width: size, height: size}
-    }
+        fn area(&self) -> u32 {
+            self.width * self.height
+        }
 
-    fn can_hold(&self, other: &Rectangle) -> bool {
-        self.width > other.width && self.height > other.height
-    }
+        fn square(size: u32) -> Self {
+            Self {
+                width: size,
+                height: size,
+            }
+        }
 
-    fn max(&self, other: Rectangle)->Rectangle{
-        Rectangle{
-            width:self.width.max(other.width),
-            height: self.height.max(other.height)
+        fn can_hold(&self, other: &Rectangle) -> bool {
+            self.width > other.width && self.height > other.height
+        }
+
+        fn max(&self, other: Rectangle) -> Rectangle {
+            Rectangle {
+                width: self.width.max(other.width),
+                height: self.height.max(other.height),
+            }
         }
     }
 }
@@ -54,7 +64,6 @@ enum Coin {
     Dime,
     Quarter,
 }
-
 
 fn value_in_cents(coin: &Coin) -> u8 {
     match coin {
