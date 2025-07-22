@@ -1,8 +1,16 @@
-fn main() {
 
 
+pub trait Summary {
+    fn summarize(&self) -> String {
+        String::from("(Read more…)")
+    }
 }
 
+impl Summary for i32{}
+
+fn main() {
+    println!("{}",3.summarize());
+}
 
 mod test {
 
