@@ -1,26 +1,8 @@
-use crate::test::Rectangle;
 fn main() {
-    let a = Box::new(String::from("hello"));
-    let b = String::from("hello");
 
-    let c = *a;
-    let d = b;
 
-    let d: &str = "hello";
-    let e = d.to_string();
-
-    println!("{d}");
-
-    let mut v = Vec::new();
-    let v1 = vec![1, 2, 3];
-
-    v.push(1);
-
-    // let mut a = Rectangle::new{
-    //     2,2
-    // };
-    // a.height = 5;
 }
+
 
 mod test {
 
