@@ -1,5 +1,6 @@
-https://rust-book.cs.brown.edu/ch10-03-lifetime-syntax.html
+https://rust-book.cs.brown.edu/ch10-04-inventory.html
 
+https://rust-book.cs.brown.edu/ch10-03-lifetime-syntax.html
 https://rust-book.cs.brown.edu/ch10-01-syntax.html
 https://rust-book.cs.brown.edu/ch10-00-generics.html
 https://rust-book.cs.brown.edu/ch09-02-recoverable-errors-with-result.html
