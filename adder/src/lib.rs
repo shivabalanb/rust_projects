@@ -3,20 +3,20 @@ pub fn add(left: u64, right: u64) -> u64 {
 }
 
 pub fn add_two(a: usize) -> usize {
-    a + 3
+    a + 2
 }
 
-#[derive(Debug)]
-struct Rectangle {
-    width: u32,
-    height: u32,
-}
+// #[derive(Debug)]
+// struct Rectangle {
+//     width: u32,
+//     height: u32,
+// }
 
-impl Rectangle {
-    fn can_hold(&self, other: &Rectangle) -> bool {
-        self.width > other.width && self.height > other.height
-    }
-}
+// impl Rectangle {
+//     fn can_hold(&self, other: &Rectangle) -> bool {
+//         self.width > other.width && self.height > other.height
+//     }
+// }
 
 #[cfg(test)]
 mod tests {
