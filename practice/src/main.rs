@@ -1,16 +1,54 @@
+use std::thread;
 
+#[derive(Debug, Clone, Copy)]
+enum ShirtColor {
+    Red,
+    Blue,
+}
 
+struct Inventory {
+    shirts: Vec<ShirtColor>,
+}
+
+impl Inventory {
+    fn giveaway(&self, user_preference: Option<ShirtColor>) -> ShirtColor {
+        user_preference.unwrap_or_else(|| self.most_stocked())
+    }
+
+    fn most_stocked(&self) -> ShirtColor {
+        println!("most_stocked()");
+        let mut num_red = 0;
+        let mut num_blue = 0;
+
+        for color in &self.shirts {
+            match color {
+                ShirtColor::Red => num_red += 1,
+                ShirtColor::Blue => num_blue += 1,
+            }
+        }
+        if num_red > num_blue {
+            ShirtColor::Red
+        } else {
+            ShirtColor::Blue
+        }
+    }
+}
+
+fn main() {
+    let list = vec![1, 2, 3];
+    println!("Before defining closure: {list:?}");
+
+    thread::spawn(move || println!("From thread: {list:?}"))
+        .join()
+        .unwrap();
+}
 pub trait Summary {
     fn summarize(&self) -> String {
         String::from("(Read more…)")
     }
 }
 
-impl Summary for i32{}
-
-fn main() {
-    println!("{}",3.summarize());
-}
+impl Summary for i32 {}
 
 mod test {
 
