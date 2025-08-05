@@ -1,0 +1,1 @@
+/Users/shivabalathandayuthapani/Documents/Projects/rust_projects/minigrep/target/release/minigrep: /Users/shivabalathandayuthapani/Documents/Projects/rust_projects/minigrep/src/lib.rs /Users/shivabalathandayuthapani/Documents/Projects/rust_projects/minigrep/src/main.rs
