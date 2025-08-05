@@ -1,5 +1,6 @@
-https://rust-book.cs.brown.edu/ch13-01-closures.html
+https://rust-book.cs.brown.edu/ch13-02-iterators.html
 
+https://rust-book.cs.brown.edu/ch13-01-closures.html
 https://rust-book.cs.brown.edu/ch13-01-closures.html
 https://rust-book.cs.brown.edu/ch12-03-improving-error-handling-and-modularity.html
 https://rust-book.cs.brown.edu/ch12-02-reading-a-file.html
