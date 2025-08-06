@@ -1,4 +1,29 @@
-use std::thread;
+use std::ops::Deref;
+
+struct MyBox<T>(T);
+
+impl<T> Deref for MyBox<T> {
+    type Target = T;
+
+    fn deref(&self)->&Self::Target{
+        &self.0
+    }
+}
+
+impl<T> MyBox<T>{
+    fn new(x:T)->MyBox<T>{
+        MyBox(x)
+    }
+}
+
+fn hello(name: &str) {
+    println!("Hello, {name}!");
+}
+
+fn main() {
+    let m = MyBox::new(String::from("Rust"));
+    hello(&m);
+}
 
 #[derive(Debug, Clone, Copy)]
 enum ShirtColor {
@@ -32,15 +57,6 @@ impl Inventory {
             ShirtColor::Blue
         }
     }
-}
-
-fn main() {
-    let list = vec![1, 2, 3];
-    println!("Before defining closure: {list:?}");
-
-    thread::spawn(move || println!("From thread: {list:?}"))
-        .join()
-        .unwrap();
 }
 pub trait Summary {
     fn summarize(&self) -> String {

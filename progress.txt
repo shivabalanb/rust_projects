@@ -1,5 +1,7 @@
-https://rust-book.cs.brown.edu/ch13-02-iterators.html
+https://rust-book.cs.brown.edu/ch15-03-drop.html
 
+https://rust-book.cs.brown.edu/ch14-03-cargo-workspaces.html
+https://rust-book.cs.brown.edu/ch13-02-iterators.html
 https://rust-book.cs.brown.edu/ch13-01-closures.html
 https://rust-book.cs.brown.edu/ch13-01-closures.html
 https://rust-book.cs.brown.edu/ch12-03-improving-error-handling-and-modularity.html
