@@ -16,13 +16,14 @@ impl List {
         }
     }
 }
+
 #[derive(Debug)]
 struct Node {
     value: i32,
-                parent: RefCell<Weak<Node>>,
-
-    children: RefCell<Vec<Rc<Node>>>
+    parent: RefCell<Weak<Node>>,
+    children: RefCell<Vec<Rc<Node>>>,
 }
+
 fn main() {
     let leaf = Rc::new(Node {
         value: 3,
