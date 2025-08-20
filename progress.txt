@@ -1,5 +1,6 @@
-https://rust-book.cs.brown.edu/ch17-02-concurrency-with-async.html
+https://rust-book.cs.brown.edu/ch17-03-more-futures.html
 
+https://rust-book.cs.brown.edu/ch17-02-concurrency-with-async.html
 https://rust-book.cs.brown.edu/ch17-00-async-await.html
 https://rust-book.cs.brown.edu/ch16-00-concurrency.html
 https://rust-book.cs.brown.edu/ch15-06-reference-cycles.html
