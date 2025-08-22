@@ -2,6 +2,10 @@ use crate::List::{Cons, Nil};
 use std::cell::RefCell;
 use std::rc::{Rc, Weak};
 
+use hello_macro::HelloMacro;
+use hello_macro_derive::HelloMacro;
+
+
 #[derive(Debug)]
 enum List {
     Cons(i32, RefCell<Rc<List>>),
@@ -24,7 +28,7 @@ struct Node {
     children: RefCell<Vec<Rc<Node>>>,
 }
 
-fn main() {
+fn nodeTest() {
     let leaf = Rc::new(Node {
         value: 3,
         parent: RefCell::new(Weak::new()),
@@ -43,3 +47,13 @@ fn main() {
 
     println!("leaf parent = {:?}", leaf.parent.borrow().upgrade());
 }
+
+
+
+#[derive(HelloMacro)]
+struct Pancakes;
+
+fn main() {
+    Pancakes::hello_macro();
+}
+

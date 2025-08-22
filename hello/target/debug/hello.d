@@ -1,0 +1,1 @@
+/Users/shivabalathandayuthapani/Documents/Projects/rust_projects/hello/target/debug/hello: /Users/shivabalathandayuthapani/Documents/Projects/rust_projects/hello/src/lib.rs /Users/shivabalathandayuthapani/Documents/Projects/rust_projects/hello/src/main.rs
